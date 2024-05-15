@@ -130,7 +130,7 @@ nav {
   display: flex;
   justify-content: center; /* Center teksten horisontalt */
   align-items: center; /* Center teksten vertikalt */
-  gap: 20px; /* Tilføj lidt mellemrum mellem elementerne */
+  gap: 10px; /* Tilføj lidt mellemrum mellem elementerne */
   color: #000000; /* Tekstfarve */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
@@ -159,4 +159,15 @@ nav {
   font-size: 10px; /* Mindre skrifttype */
   margin-top: 10px; /* Tilføj lidt afstand over den mindre tekst */
   text-align: center; /* Centerer teksten horisontalt */
+}
+
+.tekst_footer a {
+  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
+  transition: color 0.3s;
+  color: #000000; /* Match linkets farve med den øvrige tekst */
+  text-decoration: none; /* Fjern understregning */
+}
+
+.tekst_footer a:hover {
+  opacity: 0.5; /* Adjust transparency level as needed */
 }
