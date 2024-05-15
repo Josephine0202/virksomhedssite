@@ -126,13 +126,37 @@ nav {
   -ms-animation: rotate 5s linear infinite; /* IE */
 }
 
-.footer {
+.tekst_footer {
+  display: flex;
+  justify-content: center; /* Center teksten horisontalt */
+  align-items: center; /* Center teksten vertikalt */
+  gap: 20px; /* Tilføj lidt mellemrum mellem elementerne */
+  color: #000000; /* Tekstfarve */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
-  font-size: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: 7px;
-  text-align: center;
-  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+  padding: 15px;
+  background-color: #f2e8c9;
+  max-height: 100px;
+  width: 100%;
+  position: fixed; /* Fixer footer til bunden af siden */
+  left: 0;
+  bottom: 0;
+  justify-content: center; /* Centerer hele containerens indhold */
+  align-items: center;
+  flex-direction: column; /* Placerer børnene i en kolonne */
+}
+
+.undertekst_footer {
+  color: #000000; /* Tekstfarve */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold; /* Mindre fed skrift for at skelne fra hovedteksten */
+  font-size: 10px; /* Mindre skrifttype */
+  margin-top: 10px; /* Tilføj lidt afstand over den mindre tekst */
+  text-align: center; /* Centerer teksten horisontalt */
 }
