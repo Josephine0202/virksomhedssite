@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -10,24 +18,20 @@ header {
   background-color: #f2e8c9;
   max-height: 130px;
   width: 100%;
-  position: fixed; /* Fix the header to the top of the page */
-  top: 0;
-  left: 0;
 }
 
 .logo img {
-  width: 50%;
+  width: 90%; /* Tilpasset mobilversion */
   height: auto;
   padding-top: 5px;
 }
 
 .logo a {
   transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
-  transition: color 0.3s;
 }
 
 .logo a:hover {
-  opacity: 0.5; /* Adjust transparency level as needed */
+  opacity: 0.5; /* Justér gennemsigtighedsniveauet efter behov */
 }
 
 nav {
@@ -46,31 +50,22 @@ nav {
   color: #000000;
   text-decoration: none;
   transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
-  transition: color 0.3s;
   text-align: end;
   font-family: "Black Ops One", system-ui;
   font-weight: normal;
   font-style: italic;
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .menu a:hover {
-  opacity: 0.5; /* Adjust transparency level as needed */
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  opacity: 0.5;
 }
 
 .rotating-logo {
-  width: 200px; /* Adjust size as needed */
+  width: 150px; /* Tilpasset mobilversion */
   animation: rotate 5s linear infinite;
 }
 
-/* Keyframes for rotation animation */
 @keyframes rotate {
   from {
     transform: rotateY(0deg);
@@ -80,50 +75,17 @@ nav {
   }
 }
 
-/* Vendor prefixes for compatibility */
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateY(360deg);
-  }
-}
-
-@-moz-keyframes rotate {
-  from {
-    -moz-transform: rotateY(0deg);
-  }
-  to {
-    -moz-transform: rotateY(360deg);
-  }
-}
-
-@-o-keyframes rotate {
-  from {
-    -o-transform: rotateY(0deg);
-  }
-  to {
-    -o-transform: rotateY(360deg);
-  }
-}
-
-@-ms-keyframes rotate {
-  from {
-    -ms-transform: rotateY(0deg);
-  }
-  to {
-    -ms-transform: rotateY(360deg);
-  }
-}
-
-/* Applying the animation with vendor prefixes */
-.rotating-logo {
-  animation: rotate 5s linear infinite;
-  -webkit-animation: rotate 5s linear infinite; /* Safari and Chrome */
-  -moz-animation: rotate 5s linear infinite; /* Firefox */
-  -o-animation: rotate 5s linear infinite; /* Opera */
-  -ms-animation: rotate 5s linear infinite; /* IE */
+.footer {
+  display: flex;
+  padding: 15px;
+  background-color: #f2e8c9;
+  width: 100%;
+  position: fixed; /* Fixer footer til bunden af siden */
+  left: 0;
+  bottom: 0;
+  justify-content: center; /* Centrer hele containerens indhold */
+  align-items: center;
+  flex-direction: column; /* Placer børnene i en kolonne */
 }
 
 .tekst_footer {
@@ -134,40 +96,56 @@ nav {
   color: #000000; /* Tekstfarve */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
-  font-size: 12px;
-  margin-top: 10px;
-}
-
-.footer {
-  display: flex;
-  padding: 15px;
-  background-color: #f2e8c9;
-  max-height: 100px;
-  width: 100%;
-  position: fixed; /* Fixer footer til bunden af siden */
-  left: 0;
-  bottom: 0;
-  justify-content: center; /* Centerer hele containerens indhold */
-  align-items: center;
-  flex-direction: column; /* Placerer børnene i en kolonne */
+  font-size: 10px;
+  margin-top: 5px;
 }
 
 .undertekst_footer {
   color: #000000; /* Tekstfarve */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold; /* Mindre fed skrift for at skelne fra hovedteksten */
-  font-size: 10px; /* Mindre skrifttype */
-  margin-top: 10px; /* Tilføj lidt afstand over den mindre tekst */
+  font-size: 9px; /* Mindre skrifttype */
+  margin-top: 5px; /* Tilføj lidt afstand over den mindre tekst */
   text-align: center; /* Centerer teksten horisontalt */
 }
 
 .tekst_footer a {
   transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
-  transition: color 0.3s;
   color: #000000; /* Match linkets farve med den øvrige tekst */
   text-decoration: none; /* Fjern understregning */
 }
 
 .tekst_footer a:hover {
-  opacity: 0.5; /* Adjust transparency level as needed */
+  opacity: 0.5; /* Justér gennemsigtighedsniveauet efter behov */
+}
+
+/* Media query for desktop version */
+@media (min-width: 769px) {
+  header {
+    padding: 20px; /* Tilpasset desktopversion */
+  }
+
+  .logo img {
+    width: 50%; /* Tilpasset desktopversion */
+  }
+
+  .menu a {
+    font-size: 24px; /* Tilpasset desktopversion */
+  }
+
+  .rotating-logo {
+    width: 200px; /* Tilpasset desktopversion */
+  }
+
+  .footer {
+    padding: 20px; /* Tilpasset desktopversion */
+  }
+
+  .tekst_footer {
+    font-size: 12px; /* Tilpasset desktopversion */
+  }
+
+  .undertekst_footer {
+    font-size: 10px; /* Tilpasset desktopversion */
+  }
 }
