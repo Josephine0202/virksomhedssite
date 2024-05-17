@@ -10,6 +10,13 @@ body {
   height: 100%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 10px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -21,7 +28,7 @@ header {
 }
 
 .logo img {
-  width: 90%; /* Tilpasset mobilversion */
+  width: 90%;
   height: auto;
   padding-top: 5px;
 }
@@ -31,7 +38,7 @@ header {
 }
 
 .logo a:hover {
-  opacity: 0.5; /* Justér gennemsigtighedsniveauet efter behov */
+  opacity: 0.5; /* Justér gennemsigtighedsniveauet */
 }
 
 nav {
@@ -62,7 +69,7 @@ nav {
 }
 
 .rotating-logo {
-  width: 150px; /* Tilpasset mobilversion */
+  width: 150px;
   animation: rotate 5s linear infinite;
 }
 
@@ -75,12 +82,58 @@ nav {
   }
 }
 
+.herosection {
+  width: 100%;
+  height: auto;
+}
+
+.specifik-side header {
+  background-color: #ffffff;
+}
+
+.specifik-side .menu a {
+  color: #000000;
+}
+
+.specifik-side footer {
+  background-color: #ffffff;
+  position: relative;
+  border-top: 1px solid #000000;
+}
+
+.specifik-side footer p {
+  color: #000000;
+}
+
+.specifik-side footer p a {
+  color: #000000;
+}
+
+.showroom_container {
+  flex: 1;
+  margin-bottom: 10px; /* Tilføj margin til bunden af containeren */
+}
+
+.showroom_container img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.showroom_container h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 .footer {
   display: flex;
   padding: 15px;
   background-color: #f2e8c9;
   width: 100%;
-  position: fixed; /* Fixer footer til bunden af siden */
+  position: fixed;
   left: 0;
   bottom: 0;
   justify-content: center; /* Centrer hele containerens indhold */
@@ -93,7 +146,7 @@ nav {
   justify-content: center; /* Center teksten horisontalt */
   align-items: center; /* Center teksten vertikalt */
   gap: 10px; /* Tilføj lidt mellemrum mellem elementerne */
-  color: #000000; /* Tekstfarve */
+  color: #000000;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   font-size: 10px;
@@ -101,51 +154,112 @@ nav {
 }
 
 .undertekst_footer {
-  color: #000000; /* Tekstfarve */
+  color: #000000;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: bold; /* Mindre fed skrift for at skelne fra hovedteksten */
-  font-size: 9px; /* Mindre skrifttype */
-  margin-top: 5px; /* Tilføj lidt afstand over den mindre tekst */
-  text-align: center; /* Centerer teksten horisontalt */
+  font-weight: bold;
+  font-size: 9px;
+  margin-top: 5px;
+  text-align: center;
 }
 
 .tekst_footer a {
   transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
-  color: #000000; /* Match linkets farve med den øvrige tekst */
+  color: #000000;
   text-decoration: none; /* Fjern understregning */
 }
 
 .tekst_footer a:hover {
-  opacity: 0.5; /* Justér gennemsigtighedsniveauet efter behov */
+  opacity: 0.5;
 }
 
 /* Media query for desktop version */
 @media (min-width: 769px) {
   header {
-    padding: 20px; /* Tilpasset desktopversion */
+    padding: 20px;
   }
 
   .logo img {
-    width: 50%; /* Tilpasset desktopversion */
+    width: 50%;
   }
 
   .menu a {
-    font-size: 24px; /* Tilpasset desktopversion */
+    font-size: 24px;
   }
 
   .rotating-logo {
-    width: 200px; /* Tilpasset desktopversion */
+    width: 200px;
   }
 
   .footer {
-    padding: 20px; /* Tilpasset desktopversion */
+    padding: 20px;
   }
 
   .tekst_footer {
-    font-size: 12px; /* Tilpasset desktopversion */
+    font-size: 12px;
   }
 
   .undertekst_footer {
-    font-size: 10px; /* Tilpasset desktopversion */
+    font-size: 10px;
+  }
+  .herosection {
+    width: 100%;
+    height: 82vh; /* Justerer højden til 50% af viewport height */
+    object-fit: cover; /* Beholder proportioner og beskærer om nødvendigt */
+  }
+
+  .specifik-side header {
+    background-color: #ffffff;
+  }
+
+  .specifik-side .menu a {
+    color: #000000;
+    font-size: 20px;
+  }
+
+  .specifik-side footer {
+    background-color: #ffffff;
+    position: relative; /* Beholder den relative position */
+    padding: 20px 0;
+    border-top: 1px solid #000000;
+  }
+
+  .specifik-side footer p {
+    color: #000000;
+  }
+
+  .specifik-side footer p a {
+    color: #000000;
+  }
+
+  .showroom_container {
+    margin-bottom: 20px; /* Mere plads mellem billederne */
+  }
+
+  .image-row {
+    flex-direction: row; /* Skifter til række for desktop */
+    justify-content: space-between;
+    padding-left: 7px;
+  }
+
+  .image-row img {
+    width: 33%;
+    height: auto;
+  }
+
+  .image-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centerer billeder horisontalt */
+    align-items: center; /* Centerer billeder vertikalt */
+  }
+
+  .image-row2 img {
+    width: 33%;
+    height: auto;
+    margin: 0 10px; /* Tilføj margin mellem billederne */
+  }
+
+  .showroom_container h3 {
+    font-size: 35px;
   }
 }
