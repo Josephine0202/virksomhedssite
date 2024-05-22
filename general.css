@@ -157,17 +157,20 @@ nav {
   justify-content: center; /* Centrer hele containerens indhold */
   align-items: center;
   flex-direction: column; /* Placer børnene i en kolonne */
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .tekst_footer {
   display: flex;
   justify-content: center; /* Center teksten horisontalt */
   align-items: center; /* Center teksten vertikalt */
-  gap: 10px; /* Tilføj lidt mellemrum mellem elementerne */
+  gap: 5px; /* Tilføj lidt mellemrum mellem elementerne */
   color: #000000;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 10px;
+  font-family: "Black Ops One", system-ui;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
   margin-top: 5px;
 }
 
@@ -209,19 +212,19 @@ nav {
   }
 
   .footer {
-    padding: 20px;
+    padding: 15px;
     margin-top: 20px;
     margin-bottom: 0;
     position: relative; /* Beholder den relative position */
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
 
   .tekst_footer {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .undertekst_footer {
-    font-size: 10px;
+    font-size: 12px;
   }
   .slideshow-container {
     max-width: 800px; /* Juster maksimal bredde for desktop */
