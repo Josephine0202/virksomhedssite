@@ -40,6 +40,7 @@
 .showroom_container h3 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 500;
+  font-size: 25px;
   font-style: normal;
   text-align: center;
   margin-bottom: 5px;
@@ -78,6 +79,7 @@
 
   .showroom_container {
     margin-bottom: 20px; /* Mere plads mellem billederne */
+    padding-top: 20px;
   }
 
   .image-row {
@@ -101,6 +103,9 @@
   .image-row2 img {
     width: 33%;
     height: auto;
-    margin: 0 10px; /* Tilføj margin mellem billederne */
+  }
+
+  .showroom_container h3 {
+    font-size: 30px;
   }
 }

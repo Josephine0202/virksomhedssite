@@ -264,6 +264,8 @@ nav {
     position: relative; /* Beholder den relative position */
     padding: 20px 0;
     border-top: 1px solid #000000;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .specifik-side footer p {
