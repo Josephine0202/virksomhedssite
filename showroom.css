@@ -46,6 +46,26 @@
   margin-bottom: 5px;
 }
 
+/* Adresse og åbningstider */
+.info-box {
+  font-family: "Kanit", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.info-box p {
+  padding-bottom: 5px;
+}
+
+.info-box strong {
+  font-size: 15px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+}
+
 @media (min-width: 769px) {
   .herosection {
     width: 100%;
@@ -107,5 +127,23 @@
 
   .showroom_container h3 {
     font-size: 30px;
+  }
+
+  .info-box {
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 15px;
+  }
+
+  .info-box p {
+    padding-bottom: 10px;
+  }
+
+  .info-box strong {
+    font-size: 18px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
   }
 }
