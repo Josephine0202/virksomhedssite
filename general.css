@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 10px;
+}
+
+/* header/menu */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f2e8c9;
+  max-height: 130px;
+  width: 100%;
+  position: relative;
+}
+
+.logo img {
+  width: 90%;
+  height: auto;
+  padding-top: 5px;
+  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
+}
+
+.logo a {
+  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
+}
+
+.logo a:hover {
+  opacity: 0.5;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
+  text-align: end;
+  font-family: "Black Ops One", system-ui;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 11px;
+}
+
+.menu a:hover {
+  opacity: 0.5;
+}
+
+/* Burger menu styles */
+.burger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1100;
+  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
+}
+
+.burger-menu:hover {
+  opacity: 0.5; /* Justér gennemsigtighedsniveauet */
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Skjul menuen som standard på mobil */
+    flex-direction: column;
+    width: 100%;
+    background-color: #f2e8c9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Sørger for, at menuen er øverst */
+    padding-top: 55px;
+    padding-left: 0px;
+  }
+
+  .menu li {
+    margin: 0px; /* Tilføj margin mellem menupunkterne */
+  }
+
+  .menu.active {
+    display: flex; /* Vis menuen, når den har klassen 'active' */
+  }
+
+  .burger-menu {
+    display: block; /* Vis burger-menu-ikonet på mobil */
+    z-index: 1100; /* Sørger for, at burger-menuen er øverst */
+    padding-bottom: 30px;
+  }
+
+  .logo,
+  .burger-menu {
+    margin-bottom: 30px; /* Tilføj lidt mellemrum mellem logoet og burger-menuen */
+  }
+
+  .logo {
+    z-index: 1200; /* Sørger for, at logoet er øverst */
+    margin-bottom: 15px; /* Tilføj lidt mellemrum mellem logoet og burger-menuen */
+    width: 70%;
+  }
+}
+
+.rotating-logo {
+  width: 150px;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* footer */
+.footer {
+  display: flex;
+  padding: 15px;
+  background-color: #f2e8c9;
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  justify-content: center; /* Centrer hele containerens indhold */
+  align-items: center;
+  flex-direction: column; /* Placer børnene i en kolonne */
+}
+
+.tekst_footer {
+  display: flex;
+  justify-content: center; /* Center teksten horisontalt */
+  align-items: center; /* Center teksten vertikalt */
+  gap: 10px; /* Tilføj lidt mellemrum mellem elementerne */
+  color: #000000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.undertekst_footer {
+  color: #000000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 9px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.tekst_footer a {
+  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
+  color: #000000;
+  text-decoration: none; /* Fjern understregning */
+}
+
+.tekst_footer a:hover {
+  opacity: 0.5;
+}
+
+/* Media query for desktop version */
+@media (min-width: 769px) {
+  header {
+    padding: 20px;
+  }
+
+  .logo img {
+    width: 50%;
+  }
+
+  .menu a {
+    font-size: 24px;
+  }
+
+  .rotating-logo {
+    width: 200px;
+  }
+
+  .footer {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    position: relative; /* Beholder den relative position */
+    padding-bottom: 20px;
+  }
+
+  .tekst_footer {
+    font-size: 12px;
+  }
+
+  .undertekst_footer {
+    font-size: 10px;
+  }
+  .slideshow-container {
+    max-width: 800px; /* Juster maksimal bredde for desktop */
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+  .mySlides {
+    display: none; /* Start med at skjule alle billeder */
+    width: 100%;
+  }
+  .text {
+    font-size: 40px;
+    bottom: auto;
+    top: 50%; /* Vertikal centrering */
+    left: 50%; /* Horisontal centrering */
+    transform: translate(-50%, -50%); /* Juster for absolut centring */
+  }
+  .herosection {
+    width: 100%;
+    height: 82vh;
+    object-fit: cover; /* Beholder proportioner og beskærer om nødvendigt */
+  }
+
+  .specifik-side header {
+    background-color: #ffffff;
+  }
+
+  .specifik-side .menu a {
+    color: #000000;
+    font-size: 20px;
+  }
+
+  .specifik-side footer {
+    background-color: #ffffff;
+    position: relative; /* Beholder den relative position */
+    padding: 20px 0;
+    border-top: 1px solid #000000;
+  }
+
+  .specifik-side footer p {
+    color: #000000;
+  }
+
+  .specifik-side footer p a {
+    color: #000000;
+  }
+}

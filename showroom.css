@@ -1,0 +1,106 @@
+/* showroom.html */
+.herosection {
+  width: 100%;
+  height: auto;
+}
+
+.specifik-side header {
+  background-color: #ffffff;
+}
+
+.specifik-side .menu a {
+  color: #000000;
+}
+
+.specifik-side footer {
+  background-color: #ffffff;
+  position: relative;
+  border-top: 1px solid #000000;
+}
+
+.specifik-side footer p {
+  color: #000000;
+}
+
+.specifik-side footer p a {
+  color: #000000;
+}
+
+.showroom_container {
+  flex: 1;
+  margin-bottom: 10px; /* Tilføj margin til bunden af containeren */
+}
+
+.showroom_container img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.showroom_container h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 769px) {
+  .herosection {
+    width: 100%;
+    height: 82vh;
+    object-fit: cover; /* Beholder proportioner og beskærer om nødvendigt */
+  }
+
+  .specifik-side header {
+    background-color: #ffffff;
+  }
+
+  .specifik-side .menu a {
+    color: #000000;
+    font-size: 20px;
+  }
+
+  .specifik-side footer {
+    background-color: #ffffff;
+    position: relative; /* Beholder den relative position */
+    padding: 20px 0;
+    border-top: 1px solid #000000;
+  }
+
+  .specifik-side footer p {
+    color: #000000;
+  }
+
+  .specifik-side footer p a {
+    color: #000000;
+  }
+
+  .showroom_container {
+    margin-bottom: 20px; /* Mere plads mellem billederne */
+  }
+
+  .image-row {
+    flex-direction: row; /* Skifter til række for desktop */
+    justify-content: space-between;
+    padding-left: 7px;
+  }
+
+  .image-row img {
+    width: 33%;
+    height: auto;
+  }
+
+  .image-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centerer billeder horisontalt */
+    align-items: center; /* Centerer billeder vertikalt */
+  }
+
+  .image-row2 img {
+    width: 33%;
+    height: auto;
+    margin: 0 10px; /* Tilføj margin mellem billederne */
+  }
+}

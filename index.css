@@ -1,0 +1,140 @@
+/* index.html */
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.text {
+  font-family: "Bebas Neue", sans-serif;
+  color: #000000;
+  font-size: 35px;
+  font-weight: 500;
+  font-style: normal;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 95px;
+  width: 100%;
+  text-align: center;
+  opacity: 0.6; /* Tilføj gennemsigtighed */
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tekst_landingpage {
+  font-family: "Kanit", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.about_knap {
+  font-weight: 600;
+}
+
+.about_knap a {
+  text-decoration: none;
+  color: #000000;
+  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
+}
+
+.about_knap a:hover {
+  text-decoration: none;
+  color: #667368;
+  opacity: 1;
+}
+
+.services_overskrift {
+  font-family: "Kanit", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  padding-top: 40px;
+}
+
+.tekst_services {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.custom-list {
+  list-style-type: disc; /* Skifter til bulletpoints */
+  padding-left: 20px; /* Tilføjer lidt indrykning til listen */
+  margin-bottom: 35px;
+}
+
+.custom-list li {
+  margin-bottom: 10px; /* Tilføjer afstand mellem punkterne */
+}
+
+@media (min-width: 769px) {
+  .tekst-container {
+    display: flex;
+    flex-direction: row; /* Skifter til række for desktop */
+    justify-content: space-between;
+  }
+
+  .tekst-row {
+    flex: 1;
+  }
+
+  .tekst-row2 {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centerer teksten horisontalt */
+    align-items: flex-start; /* Justerer teksten vertikalt til toppen */
+  }
+
+  .tekst_landingpage,
+  .tekst_services {
+    font-size: 16px;
+    line-height: 28px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .tekst_landingpage {
+    line-height: 45px;
+    padding-top: 43px;
+  }
+
+  .services_overskrift {
+    font-size: 22px;
+    padding-top: 0; /* Fjern padding top for bedre justering */
+  }
+
+  .custom-list {
+    margin-top: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 35px;
+  }
+
+  .custom-list li {
+    margin-bottom: 15px;
+  }
+}
