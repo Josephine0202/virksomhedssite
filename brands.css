@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /* Styling for hvert brand_item */
@@ -18,6 +19,7 @@
   width: 30%; /* Bredde af hvert billede, så de står ved siden af hinanden */
   height: auto;
   margin: 0 3px; /* Lidt margin mellem billederne */
+  padding: 2px;
 }
 
 .brand_item {

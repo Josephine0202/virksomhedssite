@@ -94,7 +94,7 @@
     background-color: #ffffff;
     position: relative; /* Beholder den relative position */
     padding: 20px 0;
-    border-top: 1px solid #000000;
+    border-top: 2px solid #000000;
   }
 
   .specifik-side footer p {
@@ -163,5 +163,10 @@
     font-size: 18px;
     font-family: "Kanit", sans-serif;
     font-weight: 500;
+  }
+/*
+  .showroom.html,
+  body {
+    background-color: #f2e8c9b5;
   }
 }
