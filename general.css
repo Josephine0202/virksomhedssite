@@ -175,6 +175,7 @@ nav {
 }
 
 
+
 /*Logo*/
 .logo,
 .burger {
@@ -186,7 +187,6 @@ nav {
   margin-bottom: 15px; /* Tilføj lidt mellemrum mellem logoet og burger-menuen */
   width: 70%;
 }
-
 .rotating-logo {
   width: 150px;
   animation: rotate 5s linear infinite;
@@ -200,6 +200,7 @@ nav {
     transform: rotateY(360deg);
   }
 }
+
 
 /* footer */
 .footer {
