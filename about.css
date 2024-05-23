@@ -1,107 +1,106 @@
 img {
-    width: 100%;
+  width: 100%;
 }
 
 /*Mobile version*/
 .about_us {
-    font-family: Helvetica;
-    line-height: 20px;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 40px;
+  font-family: Helvetica;
+  line-height: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
 }
 .press {
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 h2 {
-    font-family: Helvetica;
-    font-size: large;
-    color: black;
-    margin-top: 30px;
-    margin-bottom: 20px;
+  font-family: Helvetica;
+  font-size: large;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 li {
-    font-family: Helvetica;
-    color: black;
-    line-height: 20px;
-    margin-bottom: 10px;
+  font-family: Helvetica;
+  color: black;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 p {
-    color: black;
+  color: black;
 }
 
 /* footer mobile */
 .footer_about {
-    display: flex;
-    padding: 15px;
-    background-color: #f2e8c9;
-    width: 100%;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    justify-content: center; /* Centrer hele containerens indhold */
-    align-items: center;
-    flex-direction: column; /* Placer børnene i en kolonne */
-    margin-bottom: 15px;
-    margin-top: 15px;
-  }
-  
-  .tekst_footer_about {
-    display: flex;
-    justify-content: center; /* Center teksten horisontalt */
-    align-items: center; /* Center teksten vertikalt */
-    gap: 5px; /* Tilføj lidt mellemrum mellem elementerne */
-    color: #000000;
-    font-family: "Black Ops One", system-ui;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 13px;
-    margin-top: 5px;
-  }
-  
-  .undertekst_footer_about {
-    color: #000000;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 9px;
-    margin-top: 5px;
-    text-align: center;
-  }
-  
-  .tekst_footer_about a {
-    transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
-    color: #000000;
-    text-decoration: none; /* Fjern understregning */
-  }
-  
-  .tekst_footer_about a:hover {
-    opacity: 0.5;
-  }
+  display: flex;
+  padding: 15px;
+  background-color: #f2e8c9;
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  justify-content: center; /* Centrer hele containerens indhold */
+  align-items: center;
+  flex-direction: column; /* Placer børnene i en kolonne */
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.tekst_footer_about {
+  display: flex;
+  justify-content: center; /* Center teksten horisontalt */
+  align-items: center; /* Center teksten vertikalt */
+  gap: 5px; /* Tilføj lidt mellemrum mellem elementerne */
+  color: #000000;
+  font-family: "Black Ops One", system-ui;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.undertekst_footer_about {
+  color: #000000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 9px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.tekst_footer_about a {
+  transition: opacity 170ms ease-in-out, color 170ms ease-in-out, background-color 170ms ease-in-out;
+  color: #000000;
+  text-decoration: none; /* Fjern understregning */
+}
+
+.tekst_footer_about a:hover {
+  opacity: 0.5;
+}
 
 /* Desktop version */
 @media (min-width: 769px) {
-
-.col_1-1 {
+  .col_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-.img_stiferne {
+  }
+  .img_stiferne {
     display: grid;
     grid-column: 2/3;
     width: 90%;
     padding-top: 8rem;
     padding-right: 6rem;
-}
-.press {
+  }
+  .press {
     display: grid;
     grid-column: 2/3;
     max-width: 65ch;
-}
-.about_us {
+  }
+  .about_us {
     display: grid;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -109,12 +108,12 @@ p {
     line-height: 30px;
     margin-top: 8rem;
     margin-left: 8rem;
-}
-p {
+  }
+  p {
     font-size: large;
-}
+  }
 
-.footer_about {
+  .footer_about {
     padding: 15px;
     margin-top: 20px;
     margin-bottom: 0;
