@@ -49,11 +49,11 @@
 /* Adresse og åbningstider */
 .info-box {
   font-family: "Kanit", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
-  text-align: center;
   margin-bottom: 50px;
+  margin-left: 13px;
 }
 
 .info-box p {
@@ -64,6 +64,14 @@
   font-size: 15px;
   font-family: "Kanit", sans-serif;
   font-weight: 500;
+}
+
+/* IMG PARIS */
+.image-row2 img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover; /* Sørger for at billedet bevarer proportionerne */
+  object-position: center; /* Centrerer billedet inden for rammen */
 }
 
 @media (min-width: 769px) {
@@ -102,26 +110,26 @@
     padding-top: 20px;
   }
 
+  .content-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .image-row {
-    flex-direction: row; /* Skifter til række for desktop */
-    justify-content: space-between;
-    padding-left: 7px;
+    margin-bottom: 0;
   }
 
   .image-row img {
-    width: 33%;
+    width: 100%;
     height: auto;
   }
 
-  .image-row2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* Centerer billeder horisontalt */
-    align-items: center; /* Centerer billeder vertikalt */
+  .info-paris,
+  .info-copenhagen {
+    padding-top: 50px;
   }
 
   .image-row2 img {
-    width: 33%;
     height: auto;
   }
 
@@ -129,12 +137,13 @@
     font-size: 30px;
   }
 
-  .info-box {
-    text-align: center;
+  .info-copenhagen {
     font-family: "Kanit", sans-serif;
     font-size: 15px;
     line-height: 1.5;
-    margin-top: 15px;
+    width: 50%;
+    margin-top: 0;
+    margin-left: 20px;
   }
 
   .info-box p {

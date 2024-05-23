@@ -25,21 +25,24 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="logo/rich_hanc_logo.png" alt="logo" class="rotating-logo">
+                <img src="logo/rich_hanc_logo.png" alt="rotating-logo">
             </a>
         </div>
         <nav>
-            <div class="burger-menu" onclick="toggleMenu()">
-                &#9776;
-            </div>
             <ul class="menu">
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="brands.html">OUR BRANDS</a></li>
                 <li><a href="showroom.html">SHOWROOM</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
     </header>
+    <script src="menu.js"></script>
     <main>
         <div class="herosection">
             <video autoplay loop muted plays-inline class="herosection">
@@ -47,34 +50,44 @@
             </video>
         </div>
         <div class="showroom_container">
-            <h3>COPENHAGEN</h3>
-            <div class="image-row">
-                <img class="indgang" src="billeder/indgang.png" alt="indgang">
-                <img class="disken" src="billeder/ved_disken.png" alt="disken">
-                <img class="vinduesstativ" src="billeder/vinduesstativ.png" alt="vinduesstativ">
-            </div>
-            <div class="info-box">
-                <p><strong>Address</strong><br>
-                    Larsbjørnsstræde 26, 1454 Copenhagen</p>
-                <p><strong>Opening Hours</strong><br>
-                    Monday - Saturday: 10:00 AM – 6:00 PM<br>
-                    Sunday: Closed</p>
+
+            <div class="content-row">
+
+                <div class="image-row">
+                    <h3>COPENHAGEN</h3>
+                    <img class="indgang" src="billeder/indgang.png" alt="indgang">
+                </div>
+                <div class="info-copenhagen">
+                    <div class="info-box">
+                        <p><strong>ADDRESS</strong><br>
+                            LARSBJØRNSSTRÆDE 26, 1454 COPENHAGEN</p>
+                        <p><strong>OPENING HOURS</strong><br>
+                            MONDAY - SATURDAY: 10:00 AM – 6:00 PM<br>
+                            SUNDAY: CLOSED</p>
+                    </div>
+
+
+                </div>
+
+
             </div>
 
-            <h3>PARIS</h3>
-            <div class="image-row2">
-                <img class="paris_01" src="billeder/showroom/paris_02.png" alt="paris_02">
-                <img class="paris_02" src="billeder/showroom/paris_03.png" alt="paris_03">
-                <img class="paris_03" src="billeder/showroom/paris_01.png" alt="paris_01">
+            <div class="content-row">
+                <div class="image-row2">
+                    <h3>PARIS</h3>
+                    <img class="paris_01" src="billeder/showroom/paris_02.png" alt="paris_02">
+                </div>
+                <div class="info-paris">
+
+                    <div class="info-box">
+                        <p><strong>ADDRESS</strong><br>
+                            xxxxxxxx xx, xxxx PARIS</p>
+                        <p><strong>OPENING HOURS</strong><br>
+                            MONDAY - SATURDAY: 10:00 AM – 6:00 PM<br>
+                            SUNDAY: CLOSED</p>
+                    </div>
+                </div>
             </div>
-            <div class="info-box">
-                <p><strong>Address</strong><br>
-                    xxxxxxxx xx, xxxx Paris</p>
-                <p><strong>Opening Hours</strong><br>
-                    Monday - Saturday: 10:00 AM – 6:00 PM<br>
-                    Sunday: Closed</p>
-            </div>
-        </div>
     </main>
     <footer class="footer">
         <div class="tekst_footer">

@@ -67,8 +67,8 @@ img {
 }
 
 .services_overskrift {
-  font-family: "Kanit", sans-serif;
-  font-size: 17px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
   font-weight: 500;
   padding-top: 40px;
 }
@@ -92,6 +92,10 @@ img {
 }
 
 @media (min-width: 769px) {
+  .text {
+    margin-top: 45px;
+    font-size: 50px;
+  }
   .tekst-container {
     display: flex;
     flex-direction: row; /* Skifter til række for desktop */
@@ -119,12 +123,13 @@ img {
 
   .tekst_landingpage {
     line-height: 45px;
-    padding-top: 43px;
+    padding-top: 100px;
   }
 
   .services_overskrift {
     font-size: 22px;
     padding-top: 0; /* Fjern padding top for bedre justering */
+    padding-top: 55px;
   }
 
   .custom-list {
