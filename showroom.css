@@ -111,13 +111,11 @@
   }
 
   .content-row {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .image-row {
-    width: 40%;
     margin-bottom: 0;
   }
 
@@ -126,13 +124,12 @@
     height: auto;
   }
 
-  .image-row2 {
-    display: flex;
-    flex-direction: row;
+  .info-paris,
+  .info-copenhagen {
+    padding-top: 50px;
   }
 
   .image-row2 img {
-    width: 33%;
     height: auto;
   }
 
