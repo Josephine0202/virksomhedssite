@@ -263,6 +263,7 @@ nav {
   .menu a {
     font-size: 24px;
     margin: 10px;
+    white-space: nowrap; /**Gør at our brands kommer på 1 linie**/
   }
 
   .rotating-logo {
