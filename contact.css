@@ -1,0 +1,66 @@
+main {
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 2rem;
+}
+
+label {
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  input,
+  textarea {
+    background-color: #fefdf8;
+  }
+  
+  .form-felt1 {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .form-felt2 {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .form-felt-button {
+    /* Button Placering */
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    /* Button style */
+    background-color: black;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 5px;
+    border: black;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .form-felt1 {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .form-felt2 {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  }
+  

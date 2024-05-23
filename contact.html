@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="contact.css">
     <title> Rich & Hanc</title>
@@ -30,7 +35,30 @@
         </nav>
     </header>
     <main>
-
+        <form>
+            <h1>Use contactformular to get in touch</h1>
+            <div class="form-felt1">
+                <label for="first-name">First Name (Required)</label>
+                <input id="first-name" name="fname" type="text" required>
+    
+                <label for="last-name">Last Name (Required)</label>
+                <input id="last-name" name="lname" type="text" required>
+            </div>
+            <div class="form-felt2">
+                <label for="email">E-mail (Required)</label>
+                <input id="email" name="email" type="email" required>
+    
+                <label for="Subject">Subejct (Required)</label>
+                <input id="Subject" name="Subject" type="text" required>
+    
+                <label>Message (Required)</label>
+                <textarea name="Message" rows="5" required></textarea>
+            </div>
+    
+            <button class="form-felt-button">Send</button>
+    
+        </form>
+    
 
     </main>
     <footer class="footer">
