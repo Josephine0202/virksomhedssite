@@ -105,11 +105,26 @@ img {
   transform: translateY(-5px);
 }
 
-.services_overskrift {
+/* .services_overskrift {
   font-family: "Bebas Neue", sans-serif;
   font-size: 25px;
   font-weight: 500;
   padding-top: 40px;
+} */
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 40px;
+}
+
+.citat {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 40px;
+  line-height: 30px;
 }
 
 .tekst_services {
@@ -135,27 +150,42 @@ img {
     margin-top: 45px;
     font-size: 50px;
   }
-  .tekst-container {
+  /* .tekst-container {
     display: flex;
     flex-direction: row; /* Skifter til række for desktop */
-    justify-content: space-between;
-  }
+    /*justify-content: space-between; */
+
+    .tekst-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 50px;
+    }
 
   .tekst-row {
-    flex: 1;
+    display: grid;
+    grid-column: 1/2;
+    /* flex: 1; */
     max-width: 65ch;
     margin-left: 50px;
   }
 
   .tekst-row2 {
-    flex: 1;
-    display: flex;
+    display: grid;
+    grid-column: 2/3;
+    /* flex: 1;
+    display: flex; */
     justify-content: center; /* Centerer teksten horisontalt */
     align-items: flex-start; /* Justerer teksten vertikalt til toppen */
     max-width: 65ch;
     margin-bottom: 35px;
     margin-right: 30px;
-    line-height: 20px;
+    line-height: 25px;
+  }
+
+  .button_div {
+    display: grid;
+    grid-column: 1/2;
+    margin-top: -70px;
   }
 
   .tekst_landingpage,
@@ -168,8 +198,8 @@ img {
 
   .tekst_landingpage {
     line-height: 30px;
-    padding-top: 100px;
-    padding-left: 60px;
+    padding-top: 50px;
+    padding-left: 30px;
   }
 
   .services_overskrift {
