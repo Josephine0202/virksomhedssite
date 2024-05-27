@@ -3,36 +3,43 @@ img {
 }
 
 /*Mobile version*/
+.img_stiferne {
+  width: 95%;
+  margin-left: 12.5px;
+  padding-top: 10px;
+}
+
 .about_us {
   font-family: "Kanit", sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 350;
-  line-height: 30px;
+  line-height: 23px;
   margin-left: 30px;
   margin-right: 30px;
+  max-width: 65ch;
 }
+
 .press {
-  margin-top: 20px;
   margin-left: 30px;
-  margin-right: 20px;
-  margin-bottom: 20px;
 }
+
 h2 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 500;
   font-size: 25px;
   font-style: normal;
   margin-bottom: 5px;
+  padding-top: 10px;
 }
 /* Styling af links */
 li {
   font-family: "Kanit", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 350;
   line-height: 25px;
-  margin-left: 30px;
-  margin-right: 30px;
+  max-width: 65ch;
 }
+
 a:link {
   color: rgb(0, 0, 0);
   background-color: transparent;
