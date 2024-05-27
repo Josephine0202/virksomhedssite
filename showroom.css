@@ -12,6 +12,10 @@
   color: #000000;
 }
 
+.specifik-side .menu.active {
+  background-color: #ffffff;
+}
+
 .specifik-side footer {
   background-color: #ffffff;
   position: relative;
