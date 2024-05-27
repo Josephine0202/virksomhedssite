@@ -21,7 +21,6 @@ img {
   font-style: normal;
   padding: 8px 12px;
   position: absolute;
-  bottom: 95px;
   width: 100%;
   text-align: center;
   opacity: 0.6; /* Tilføj gennemsigtighed */
@@ -79,10 +78,10 @@ img {
 }
 
 .button {
-  width: 140px;
+  width: 120px;
   height: 45px;
   font-family: "black ops one";
-  font-size: 15px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
@@ -103,26 +102,19 @@ img {
   transform: translateY(-5px);
 }
 
-/* .services_overskrift {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  padding-top: 40px;
-} */
-
 h2 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 500;
-  padding-top: 40px;
+  padding-top: 35px;
 }
 
 .citat {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 28.5px;
+  font-size: 27px;
   font-weight: 500;
   padding-top: 40px;
-  line-height: 30px;
+  line-height: 35px;
 }
 
 .tekst_services {
@@ -145,18 +137,21 @@ h2 {
 
 @media (min-width: 769px) {
   .text {
-    margin-top: 45px;
     font-size: 50px;
   }
-  /* .tekst-container {
-    display: flex;
-    flex-direction: row; /* Skifter til række for desktop */
-  /*justify-content: space-between; */
+
+  .slideshow-container {
+    width: 80%;
+  }
+
+  .mySlides img {
+    height: 80vh;
+  }
 
   .tekst-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 50px;
+    margin-left: 100px;
   }
 
   .tekst-row {
@@ -201,9 +196,9 @@ h2 {
   }
 
   .services_overskrift {
-    font-size: 22px;
+    font-size: 35px;
     padding-top: 0; /* Fjern padding top for bedre justering */
-    padding-top: 100px;
+    padding-top: 85px;
   }
 
   .custom-list {
