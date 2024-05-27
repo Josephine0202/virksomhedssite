@@ -21,6 +21,7 @@ img {
   font-style: normal;
   padding: 8px 12px;
   position: absolute;
+  top: 45%;
   width: 100%;
   text-align: center;
   opacity: 0.6; /* Tilføj gennemsigtighed */
@@ -138,6 +139,7 @@ h2 {
 @media (min-width: 769px) {
   .text {
     font-size: 50px;
+    top: 50%;
   }
 
   .slideshow-container {
