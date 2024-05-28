@@ -94,20 +94,18 @@ body {
 @media (min-width: 769px) {
   .herosection {
     width: 100%;
-   /*  height: 77vh;
+    height: 80vh;
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    overflow: hidden; */
     position: relative;
+    object-fit: cover;
   }
 
   .herosection dotlottie-player {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: relative;
-    top: 0;
-    left: 0;
   }
 
   .specifik-side header {
