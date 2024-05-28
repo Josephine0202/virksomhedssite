@@ -1,4 +1,9 @@
 /* index.html */
+#index.thml,
+body {
+  background-color: #fefdf8;
+}
+
 .mySlides {
   display: none;
 }
