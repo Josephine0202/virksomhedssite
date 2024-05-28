@@ -1,22 +1,19 @@
 /* showroom.html */
 #showroom.thml,
 body {
-  background-color: #fefdf8;
+  background-color: #f2e8c9a0;
 }
 
 .herosection {
-  display: grid;
-  height: 15%;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  background-color: black;
+  width: 100%;
+  height: 30vh;
+  position: relative;
 }
 
-.herosection-item {
-  display: grid;
-  margin-top: -11px;
-  margin-right: -13%;
-  margin-left: -13%;
+.herosection .baggrundsklip {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .specifik-side header {
@@ -54,10 +51,10 @@ body {
 .showroom_container h3 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 30px;
   font-style: normal;
-  text-align: center;
   margin-bottom: 5px;
+  margin-left: 15px;
 }
 
 /* Adresse og åbningstider */
@@ -77,13 +74,13 @@ body {
 .info-box strong {
   font-size: 15px;
   font-family: "Kanit", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* IMG PARIS */
 .image-row2 img {
   width: 100%;
-  height: 50vh;
+  height: 38vh;
   object-fit: cover; /* Sørger for at billedet bevarer proportionerne */
   object-position: center; /* Centrerer billedet inden for rammen */
 }
@@ -92,37 +89,27 @@ body {
 .showroom-tekst {
   font-family: "Kanit", sans-serif;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 350;
   line-height: 23px;
-  text-align: center;
-  margin-left: 15px;
-  margin-right: 15px;
-  max-width: 65ch;
+  margin-left: 50px;
+  max-width: 47ch;
   padding-bottom: 30px;
 }
 
 @media (min-width: 769px) {
   .herosection {
-    display: grid;
-    height: 31%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background-color: black;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
   }
-
-  .herosection-item {
-    display: grid;
-    margin-top: -240px;
-  }
-
-  /* .herosection dotlottie-player {
+  .herosection .baggrundsklip {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: relative;
-    top: 0;
-    left: 0;
-  } */
+  }
 
   .specifik-side header {
     background-color: #f2e8c9;
@@ -130,7 +117,7 @@ body {
 
   .specifik-side .menu a {
     color: #000000;
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .specifik-side footer {
@@ -162,14 +149,30 @@ body {
   .image-row2 {
     flex: 1;
     position: relative;
-    margin-left: 23px;
+    margin-left: 35px;
     padding-top: 35px;
   }
 
   .info-copenhagen,
   .info-paris {
     flex: 1;
-    margin-left: 20px;
+  }
+
+  .info-copenhagen {
+    text-align: center;
+    margin-right: 70px;
+  }
+
+  .info-paris {
+    text-align: center;
+  }
+
+  .info-box {
+    font-size: 15px;
+  }
+
+  .info-box strong {
+    font-size: 16px;
   }
 
   .image-row img,
@@ -180,7 +183,7 @@ body {
 
   .image-row2 img {
     width: 95%;
-    height: 51vh;
+    height: 48vh;
   }
 
   .showroom_container .h3-paris {
@@ -189,26 +192,26 @@ body {
     top: 35%;
     width: 90%;
     text-align: center;
-    opacity: 0.8;
+    margin-left: 27px;
+    opacity: 0.8.5;
     color: #f2e8c9;
   }
 
   .showroom_container .h3-copenhagen {
     font-size: 50px;
     position: absolute;
-    margin-right: 30px;
+    margin-left: 225px;
     top: 35%;
     width: 90%;
-    text-align: center;
-    opacity: 0.8;
+    opacity: 0.8.5;
     color: #f2e8c9;
   }
 
   .showroom-tekst {
-    text-align: start;
+    text-align: center;
     font-size: 16px;
-    line-height: 30px;
-    min-width: 80%;
-    margin-left: 50px;
+    line-height: 35px;
+    max-width: 60ch;
+    margin-left: 450px;
   }
 }
