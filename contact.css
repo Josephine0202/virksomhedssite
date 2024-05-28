@@ -34,7 +34,7 @@ textarea {
 input[type="text"],
 input[type="email"],
 input[type="submit"] {
-  height: 55px; /* Set the height of input fields */
+  height: 40px; /* Set the height of input fields */
 }
 
 .form-felt2 {
